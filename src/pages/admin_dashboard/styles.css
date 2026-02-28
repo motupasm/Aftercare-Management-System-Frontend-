@@ -1,0 +1,1003 @@
+:root {
+  /* colors */
+  --color-primary: #50b2c0;
+  --color-primary-hover: #3a9ca8;
+  --color-primary-soft: #e6f5f7;
+  --background-color: whitesmoke;
+  --card-background-color: white;
+  --box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  --card-border-radius: 8px;
+  --botton-border-radius: 6px;
+  --primary-text-color: #111111;
+  --secondary-text-color: #222222;
+
+  /* Display */
+  --text-logo-lg: 1.75rem;
+  --text-logo-sm: 1.25rem;
+
+  /* Display */
+  --text-display-xl: 3rem; /* 64px */
+  --text-display-lg: 3.5rem; /* 56px */
+
+  /* Headings */
+  --text-h1: 2.5rem; /* 40px */
+  --text-h2: 2rem; /* 32px */
+  --text-h3: 1.5rem; /* 24px */
+  --text-h4: 1.25rem; /* 20px */
+
+  /* Body */
+  --text-body-lg: 1rem; /* 18px */
+  --text-body: 1rem; /* 16px */
+  --text-body-sm: 0.875rem; /* 14px */
+
+  /* UI */
+  --text-caption: 0.75rem; /* 12px */
+}
+
+.sidebar-dashboard-header img {
+  width: 40px;
+  background-color: var(--color-primary);
+  padding: 5px;
+  border-radius: var(--card-border-radius);
+}
+.dashboar-dashboard-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.dashboar-dashboard-header img {
+  width: 30px;
+  background-color: var(--color-primary);
+  padding: 5px;
+  border-radius: var(--card-border-radius);
+}
+.dashboard-navbar {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--card-border-radius);
+  margin-bottom: 1rem;
+  top: 1rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  transition: 300ms ease-in-out;
+}
+.dashboard-navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  width: 90%;
+}
+.dashboard-navbar ul li {
+  display: flex;
+  gap: 0.5rem;
+  padding: 10px;
+  border-radius: var(--botton-border-radius);
+  cursor: pointer;
+  color: #6b7280;
+  align-items: center;
+  transition: 300ms ease-in-out;
+  flex: 1;
+}
+
+.dashboard-navbar ul li img {
+  width: 15px;
+}
+.dashboard-navbar ul li:hover {
+  background-color: var(--color-primary-soft);
+  color: var(--primary-text-color);
+}
+.dashboard-sidebar .sidebar-dashboard-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.dashboard-navbar .header {
+  font-size: 1.5rem;
+  color: var(--secondary-text-color);
+}
+.dashboard-navbar hr {
+  width: 80%;
+  justify-self: center;
+  align-self: center;
+}
+
+.dashboard-navbar p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: var(--text-caption);
+  margin-top: 1rem;
+}
+
+.dashboard-navbar p img {
+  width: 20px;
+}
+.dashboard-container {
+  display: flex;
+}
+
+/*---------------sidebar---------- */
+.dashboard-sidebar {
+  width: 20%;
+  height: 100vh;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: sticky;
+  top: 0;
+}
+.dashboard-sidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.dashboard-sidebar ul li {
+  display: flex;
+  gap: 0.5rem;
+  padding: 10px;
+  border-radius: var(--botton-border-radius);
+  cursor: pointer;
+  color: #6b7280;
+  align-items: center;
+  transition: 300ms ease-in-out;
+}
+
+.dashboard-sidebar ul li img {
+  width: 20px;
+}
+.dashboard-sidebar ul li:hover {
+  background-color: var(--color-primary-soft);
+  color: var(--primary-text-color);
+}
+.active {
+  background-color: var(--color-primary-soft);
+  color: var(--primary-text-color);
+}
+
+.dashboard-sidebar .sidebar-dashboard-header {
+  display: flex;
+  align-items: center;
+}
+.dashboard-sidebar .sidebar-dashboard-header h1 {
+  font-size: var(--text-body-lg);
+  color: var(--secondary-text-color);
+}
+
+.dashboard-sidebar p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: var(--text-caption);
+}
+
+.dashboard-sidebar p img {
+  width: 20px;
+}
+
+.dashboard-content {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.dashboard-main-cards {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard-main-cards .card {
+  height: 10rem;
+  width: 18rem;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--botton-border-radius);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.dashboard-main-cards .card img {
+  width: 35px;
+  background-color: var(--color-primary-soft);
+  padding: 5px;
+  border-radius: var(--card-border-radius);
+}
+
+.quick-action-header {
+  font-size: var(--text-body-lg);
+  margin-top: 2rem;
+}
+.quick-actions-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.quick-actions-container .card {
+  width: 40rem;
+  height: 75px;
+  background-color: white;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 100ms ease-in-out;
+}
+
+.quick-actions-container .card .left-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.quick-actions-container .card img {
+  width: 25px;
+}
+.quick-actions-container .card:hover {
+  background-color: var(--color-primary-soft);
+}
+.quick-actions-container .card .card-infor h1 {
+  font-size: var(--text-body-lg);
+}
+.quick-actions-container .card .card-infor p {
+  font-size: var(--text-body-sm);
+}
+
+.admin-actions {
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--card-border-radius);
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.admin-actions .headers {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: var(--secondary-text-color);
+  padding: 1rem;
+  align-items: center;
+  border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
+}
+.admin-actions .header {
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+.admin-actions .rows {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--card-border-radius);
+}
+.approved {
+  color: green;
+}
+.rejected {
+  color: red;
+}
+.pending {
+  color: yellow;
+}
+.admin-actions .rows select {
+  box-shadow: none;
+  margin: 0;
+  border-radius: 0;
+  text-align: center;
+}
+.action_buttons {
+  display: flex;
+  /* gap: 0.5rem; */
+}
+.admin-actions .rows button {
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0;
+}
+.admin-actions .status-fields {
+  flex: 1;
+  background-color: whitesmoke;
+  padding: 1rem;
+  text-align: center;
+}
+.admin-actions .row {
+  flex: 1;
+  background-color: whitesmoke;
+  padding: 1rem;
+  text-align: center;
+}
+.admin-actions .row button {
+  padding: 0;
+}
+.admin-actions .row button:hover {
+  color: var(--color-primary);
+}
+
+.homeworks-cards {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+.homeworks-cards .card {
+  width: 100%;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  height: 100px;
+  border-radius: var(--card-border-radius);
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+.homeworks-cards .card img {
+  width: 30px;
+}
+.homeworks-cards .card .cat {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.homeworks-cards .card .cat .grade {
+  color: #111111;
+}
+.homeworks-cards .card .cat .subject {
+  color: white;
+  border-radius: 20rem;
+  padding: 2px 4px;
+  text-align: center;
+  width: fit-content;
+}
+
+.subject_physics {
+  background-color: rgb(0, 160, 0);
+}
+.subject_arts {
+  background-color: rgb(0, 155, 160);
+}
+.subject_maths {
+  background-color: rgb(160, 144, 0);
+}
+
+.homeworks-cards .card .card-infor {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  width: 100%;
+}
+.homeworks-cards .card .card-infor .title-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.homeworks-cards .card .card-infor .title-actions .actions {
+  display: flex;
+  gap: 1rem;
+}
+.homeworks-cards .card .card-infor .title-actions .actions img {
+  width: 20px;
+  cursor: pointer;
+}
+.homeworks-cards .card .card-infor .title-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.homeworks-cards .card .card-infor .title-actions h1 {
+  font-size: var(--text-body-lg);
+}
+.homeworks-cards .card .card-infor p {
+  font-size: var(--text-body-sm);
+}
+.activities-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.activities-cards .card {
+  width: 30rem;
+  height: 10rem;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--card-border-radius);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.activities-cards .card .top-card-infor {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.activities-cards .card .top-card-infor img {
+  width: 30px;
+}
+.activities-cards .card .top-card-infor .infor {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 100%;
+}
+.activities-cards .card .top-card-infor h1 {
+  font-size: var(--text-body-lg);
+}
+.activities-cards .card .top-card-infor p {
+  font-size: var(--text-body-sm);
+}
+.activities-cards .card .top-card-infor .middle-inf {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.activities-cards .card .top-card-infor .middle-inf .type {
+  border-radius: 10rem;
+  padding: 2px 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  color: white;
+}
+
+.type_stem {
+  background-color: rgb(0, 160, 0);
+}
+.type_creative {
+  background-color: rgb(0, 155, 160);
+}
+.type_academic {
+  background-color: rgb(160, 144, 0);
+}
+.type_physical {
+  background-color: rgb(160, 0, 0);
+}
+.activities-cards .card .actions {
+  display: flex;
+  gap: 1rem;
+}
+.activities-cards .card .actions img {
+  width: 20px;
+  cursor: pointer;
+}
+.activities-cards .grade {
+  color: var(--color-primary);
+  font-size: var(--text-caption);
+}
+.dashboard-content .content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard-content .content-header button {
+  background-color: var(--color-primary);
+  border: none;
+  cursor: pointer;
+  padding: 10px 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.dashboard-content .content-header button img {
+  width: 20px;
+}
+.dashboard-content .content-header button:hover {
+  background-color: var(--color-primary-hover);
+}
+.add-activity-container {
+  width: 28rem;
+  height: 34rem;
+  background-color: white;
+  position: fixed;
+  top: 0;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1rem;
+  gap: 1rem;
+  display: none;
+  flex-direction: column;
+  opacity: 0;
+}
+
+.cardOpen {
+  display: flex;
+  opacity: 1;
+}
+.header-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-items h1 {
+  font-size: var(--text-body-lg);
+}
+.header-items img {
+  width: 25px;
+  cursor: pointer;
+}
+.add-activity-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.add-activity-container label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.add-activity-container .selectors {
+  display: flex;
+  gap: 0.5rem;
+  flex: 1;
+  width: 100%;
+}
+.add-activity-container .selectors select {
+  width: 12.78rem;
+}
+
+.add-activity-container select,
+option {
+  cursor: pointer;
+}
+.add-activity-container input,
+select,
+option {
+  border: none;
+  box-shadow: var(--box-shadow);
+  padding: 8px;
+  width: 100%;
+  border-radius: var(--botton-border-radius);
+  outline: none;
+  background-color: whitesmoke;
+}
+.add-activity-container textarea {
+  resize: none;
+  border: none;
+  box-shadow: var(--box-shadow);
+  padding: 8px;
+  border-radius: var(--botton-border-radius);
+  outline: none;
+  background-color: whitesmoke;
+}
+.add-activity-container .btns {
+  display: flex;
+  justify-content: right;
+  gap: 0.6rem;
+}
+.add-activity-container button:nth-child(1) {
+  box-shadow: var(--box-shadow);
+}
+.add-activity-container button:nth-child(2) {
+  background-color: var(--color-primary);
+  color: white;
+}
+.add-activity-container button:nth-child(2):hover {
+  background-color: var(--color-primary-hover);
+}
+
+/* update activity form */
+.update-activity-container {
+  width: 28rem;
+  height: 34rem;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1rem;
+  gap: 1rem;
+  display: none;
+  flex-direction: column;
+  opacity: 0;
+}
+.UpdateCardActive {
+  display: flex;
+  opacity: 1;
+}
+.update-activity-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.update-activity-container label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.update-activity-container .selectors {
+  display: flex;
+  gap: 0.5rem;
+  flex: 1;
+  width: 100%;
+}
+.update-activity-container .selectors select {
+  width: 12.78rem;
+}
+
+.update-activity-container select,
+option {
+  cursor: pointer;
+}
+.update-activity-container input,
+select,
+option {
+  border: none;
+  box-shadow: var(--box-shadow);
+  padding: 8px;
+  width: 100%;
+  border-radius: var(--botton-border-radius);
+  outline: none;
+  background-color: whitesmoke;
+}
+.update-activity-container textarea {
+  resize: none;
+  border: none;
+  box-shadow: var(--box-shadow);
+  padding: 8px;
+  border-radius: var(--botton-border-radius);
+  outline: none;
+  background-color: whitesmoke;
+}
+.update-activity-container .btns {
+  display: flex;
+  justify-content: right;
+  gap: 0.6rem;
+}
+.update-activity-container button:nth-child(1) {
+  box-shadow: var(--box-shadow);
+}
+.update-activity-container button:nth-child(2) {
+  background-color: var(--color-primary);
+  color: white;
+}
+.update-activity-container button:nth-child(2):hover {
+  background-color: var(--color-primary-hover);
+}
+
+/* add announcement */
+.add-annou-container {
+  width: 28rem;
+  height: 30rem;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1rem;
+  gap: 1rem;
+  display: none;
+  flex-direction: column;
+}
+.annouActive {
+  display: flex;
+}
+.add-annou-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.add-annou-container label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.add-annou-container input,
+select,
+option {
+  border: none;
+  box-shadow: var(--box-shadow);
+  padding: 8px;
+  width: 100%;
+  border-radius: var(--botton-border-radius);
+  outline: none;
+  background-color: whitesmoke;
+}
+.add-annou-container textarea {
+  resize: none;
+  border: none;
+  box-shadow: var(--box-shadow);
+  padding: 8px;
+  border-radius: var(--botton-border-radius);
+  outline: none;
+  background-color: whitesmoke;
+}
+.add-annou-container .btns {
+  display: flex;
+  justify-content: right;
+  gap: 0.6rem;
+}
+.add-annou-container button:nth-child(1) {
+  box-shadow: var(--box-shadow);
+}
+.add-annou-container button:nth-child(2) {
+  background-color: var(--color-primary);
+  color: white;
+}
+.add-annou-container button:nth-child(2):hover {
+  background-color: var(--color-primary-hover);
+}
+/* update announcement */
+.update-annou-container {
+  width: 28rem;
+  height: 30rem;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1rem;
+  gap: 1rem;
+  display: none;
+  flex-direction: column;
+}
+.annouActive {
+  display: flex;
+}
+.update-annou-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.update-annou-container label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.update-annou-container input,
+select,
+option {
+  border: none;
+  box-shadow: var(--box-shadow);
+  padding: 8px;
+  width: 100%;
+  border-radius: var(--botton-border-radius);
+  outline: none;
+  background-color: whitesmoke;
+}
+.update-annou-container textarea {
+  resize: none;
+  border: none;
+  box-shadow: var(--box-shadow);
+  padding: 8px;
+  border-radius: var(--botton-border-radius);
+  outline: none;
+  background-color: whitesmoke;
+}
+.update-annou-container .btns {
+  display: flex;
+  justify-content: right;
+  gap: 0.6rem;
+}
+.update-annou-container button:nth-child(1) {
+  box-shadow: var(--box-shadow);
+}
+.update-annou-container button:nth-child(2) {
+  background-color: var(--color-primary);
+  color: white;
+}
+.update-annou-container button:nth-child(2):hover {
+  background-color: var(--color-primary-hover);
+}
+/* add announcement */
+.add-annou-container {
+  width: 28rem;
+  height: 30rem;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1rem;
+  gap: 1rem;
+  display: none;
+  flex-direction: column;
+}
+.annouActive {
+  display: flex;
+}
+.add-annou-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.add-annou-container label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.add-annou-container input,
+select,
+option {
+  border: none;
+  box-shadow: var(--box-shadow);
+  padding: 8px;
+  width: 100%;
+  border-radius: var(--botton-border-radius);
+  outline: none;
+  background-color: whitesmoke;
+}
+.add-annou-container textarea {
+  resize: none;
+  border: none;
+  box-shadow: var(--box-shadow);
+  padding: 8px;
+  border-radius: var(--botton-border-radius);
+  outline: none;
+  background-color: whitesmoke;
+}
+.add-annou-container .btns {
+  display: flex;
+  justify-content: right;
+  gap: 0.6rem;
+}
+.add-annou-container button:nth-child(1) {
+  box-shadow: var(--box-shadow);
+}
+.add-annou-container button:nth-child(2) {
+  background-color: var(--color-primary);
+  color: white;
+}
+.add-annou-container button:nth-child(2):hover {
+  background-color: var(--color-primary-hover);
+}
+
+.NoCards {
+}
+@media (min-width: 300px) and (max-width: 720px) {
+  .dashboard-navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  .dashboard-sidebar {
+    display: none;
+    width: 100%;
+    position: sticky;
+  }
+  .dashboard-content {
+    padding: 1.5rem;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .dashboard-main-cards {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .dashboard-main-cards .card {
+    height: 8rem;
+    max-width: 90%;
+  }
+  .dashboard-main-cards .card h1 {
+    font-size: 1.4rem;
+  }
+  .quick-actions-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  .quick-actions-container .card {
+    max-width: 70%;
+  }
+  .quick-actions-container .card img {
+    width: 20px;
+  }
+  .dashboard-content .content-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .homeworks-cards {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  .homeworks-cards .card {
+    height: auto;
+  }
+  .activities-cards .card {
+    height: auto;
+  }
+  .add-activity-container,
+  .update-activity-container {
+    max-width: 90%;
+  }
+  .cardOpen {
+    display: flex;
+    opacity: 1;
+  }
+  .homeworks-cards .card .cat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: start;
+  }
+  .activities-cards .card .top-card-infor .middle-inf {
+    flex-direction: column;
+    align-items: start;
+  }
+  .activities-cards .card .top-card-infor .middle-inf .type {
+    width: auto;
+  }
+  .update-activity-container,
+  .selectors select {
+    width: 100%;
+  }
+  .add-activity-container .selectors select {
+    width: 100%;
+  }
+  .admin-actions {
+    overflow-x: scroll;
+  }
+  .admin-actions .headers {
+    overflow-x: scroll;
+  }
+}

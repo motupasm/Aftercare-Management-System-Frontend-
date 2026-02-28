@@ -1,0 +1,214 @@
+:root {
+  /* colors */
+  --color-primary: #50b2c0;
+  --color-primary-hover: #3a9ca8;
+  --color-primary-soft: #e6f5f7;
+  --background-color: whitesmoke;
+  --card-background-color: white;
+  --box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  --card-border-radius: 8px;
+  --botton-border-radius: 6px;
+  --primary-text-color: #111111;
+  --secondary-text-color: #222222;
+
+  /* Display */
+  --text-logo-lg: 1.75rem;
+  --text-logo-sm: 1.25rem;
+
+  /* Display */
+  --text-display-xl: 3rem; /* 64px */
+  --text-display-lg: 3.5rem; /* 56px */
+
+  /* Headings */
+  --text-h1: 2.5rem; /* 40px */
+  --text-h2: 2rem; /* 32px */
+  --text-h3: 1.5rem; /* 24px */
+  --text-h4: 1.25rem; /* 20px */
+
+  /* Body */
+  --text-body-lg: 1.125rem; /* 18px */
+  --text-body: 1rem; /* 16px */
+  --text-body-sm: 0.875rem; /* 14px */
+
+  /* UI */
+  --text-caption: 0.75rem; /* 12px */
+}
+
+.pricing-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-self: center;
+  padding: 2rem 0;
+  color: black;
+}
+.pricing-container .tag {
+  font-size: var(--text-caption);
+  background-color: var(--primary-text-color);
+  border-radius: 10rem;
+  padding: 4px;
+  width: 10rem;
+  text-align: center;
+  color: white;
+}
+.pricing-container .header {
+  font-size: var(--text-h2);
+  color: var(--color-primary);
+}
+.pricing-container .subheader {
+  font-size: var(--text-body);
+  width: 50%;
+  text-align: center;
+}
+.pricing-cards {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+.pricing-cards .card {
+  width: 22rem;
+  height: 32rem;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--card-border-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+.pricing-cards .card:nth-child(2) {
+  width: 22rem;
+  height: 32rem;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--card-border-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+  padding: 1.5rem;
+  border: 2px solid var(--color-primary);
+  position: relative;
+}
+.pricing-cards .card .price-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pricing-cards .card button {
+  border: none;
+  box-shadow: var(--box-shadow);
+  background-color: var(--color-primary-soft);
+  padding: 10px 0;
+  cursor: pointer;
+  color: black;
+  border-radius: var(--botton-border-radius);
+  margin-top: 1rem;
+  width: 100%;
+}
+.pricing-cards .card .popular {
+  background-color: var(--color-primary);
+  color: white;
+}
+.pricing-cards .card .popular:hover {
+  background-color: var(--color-primary-hover);
+}
+.pricing-cards .card button:hover {
+  background-color: whitesmoke;
+}
+.pricing-cards .card .price-container .price {
+  font-size: var(--text-display-xl);
+  text-align: center;
+}
+.pricing-cards .card .price-container .period {
+  margin-top: 1rem;
+  text-align: center;
+}
+.pricing-cards .card p {
+  text-align: center;
+}
+.pricing-cards .card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.pricing-cards .card ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #6b7280;
+}
+.pricing-cards .card ul li img {
+  width: 25px;
+  background-color: transparent;
+}
+.pricing-cards img {
+  width: 40px;
+  background-color: var(--color-primary-soft);
+  padding: 2px;
+  border-radius: var(--card-border-radius);
+}
+.pricing-cards h1 {
+  font-size: var(--text-body);
+  text-align: center;
+}
+.pricing-cards p {
+  font-size: var(--text-body);
+}
+.pricing-container .card .tag {
+  font-size: var(--text-caption);
+  background-color: var(--color-primary-hover);
+  border-radius: 10rem;
+  padding: 4px;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: -0.8rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+@media (min-width: 300px) and (max-width: 720px) {
+  .pricing-container {
+    width: 90%;
+    gap: 0.6rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pricing-container .tag {
+    width: 100%;
+  }
+  .pricing-container .header {
+    font-size: var(--text-h3);
+    text-align: center;
+  }
+  .pricing-container .subheader {
+    font-size: var(--text-body);
+    width: 100%;
+    text-align: center;
+  }
+  .pricing-cards {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  .pricing-cards .card {
+    max-width: 100%;
+    height: auto;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: white;
+    padding: 1rem;
+  }
+}

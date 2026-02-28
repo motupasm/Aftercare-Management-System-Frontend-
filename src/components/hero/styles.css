@@ -1,0 +1,177 @@
+:root {
+  /* colors */
+  --color-primary: #50b2c0;
+  --color-primary-hover: #3a9ca8;
+  --color-primary-soft: #e6f5f7;
+  --background-color: whitesmoke;
+  --card-background-color: white;
+  --box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  --card-border-radius: 8px;
+  --botton-border-radius: 6px;
+  --primary-text-color: #111111;
+  --secondary-text-color: #222222;
+
+  /* Display */
+  --text-logo-lg: 1.75rem;
+  --text-logo-sm: 1.25rem;
+
+  /* Display */
+  --text-display-xl: 3rem; /* 64px */
+  --text-display-lg: 3.5rem; /* 56px */
+
+  /* Headings */
+  --text-h1: 2.5rem; /* 40px */
+  --text-h2: 2rem; /* 32px */
+  --text-h3: 1.5rem; /* 24px */
+  --text-h4: 1.25rem; /* 20px */
+
+  /* Body */
+  --text-body-lg: 1.125rem; /* 18px */
+  --text-body: 1rem; /* 16px */
+  --text-body-sm: 0.875rem; /* 14px */
+
+  /* UI */
+  --text-caption: 0.75rem; /* 12px */
+}
+
+@keyframes hero-animation {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.left-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.hero-container {
+  width: 80%;
+  height: calc(100vh - 70px);
+  display: flex;
+  padding: 10rem 0;
+  justify-content: space-between;
+  justify-self: center;
+}
+.hero-container .tag {
+  font-size: var(--text-caption);
+  background-color: var(--secondary-text-color);
+  border-radius: 10rem;
+  padding: 4px;
+  width: 40%;
+  text-align: center;
+  color: white;
+  animation: hero-animation 1.8s forwards;
+  opacity: 0;
+}
+.hero-container .hero-header {
+  font-size: var(--text-display-xl);
+  color: var(--color-primary);
+  font-weight: 600;
+  animation: hero-animation 1.8s forwards;
+  opacity: 0;
+  animation-delay: 200ms;
+}
+.hero-container .hero-subheader {
+  font-size: var(--text-body-lg);
+  color: var(--secondary-text-color);
+  animation: hero-animation 1.8s forwards;
+  opacity: 0;
+  animation-delay: 400ms;
+}
+.hero-btn {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.hero-btn button {
+  padding: 10px 1rem;
+  border: none;
+  background-color: var(--color-primary);
+  cursor: pointer;
+  border-radius: var(--botton-border-radius);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  animation: hero-animation 1.8s forwards;
+  opacity: 0;
+  animation-delay: 600ms;
+}
+.hero-btn button:hover {
+  background-color: var(--color-primary-hover);
+}
+.hero-btn button img {
+  width: 20px;
+}
+.hero-btn a .explorer-btn {
+  padding: 10px 1rem;
+  border: 1px var(--secondary-text-color) solid;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: var(--botton-border-radius);
+  color: var(--primary-text-color);
+  animation: hero-animation 1.8s forwards;
+  opacity: 0;
+  animation-delay: 800ms;
+}
+.hero-btn .explorer-btn:hover {
+  background-color: var(--color-primary-soft);
+}
+.hero-image {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+  animation: hero-animation 1.8s forwards;
+  opacity: 0;
+  animation-delay: 800ms;
+}
+@media (min-width: 300px) and (max-width: 720px) {
+  .hero-container {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+  .hero-container .tag {
+    min-width: 60%;
+    text-align: center;
+    color: white;
+    align-self: center;
+  }
+  .hero-container .hero-header {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .hero-container .hero-subheader {
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+    text-align: center;
+  }
+  .hero-image {
+    margin-top: 1rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  .hero-btn {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    justify-self: center;
+    align-self: center;
+  }
+}

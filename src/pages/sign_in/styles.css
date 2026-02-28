@@ -1,0 +1,110 @@
+:root {
+  /* colors */
+  --color-primary: #50b2c0;
+  --color-primary-hover: #3a9ca8;
+  --color-primary-soft: #e6f5f7;
+  --background-color: whitesmoke;
+  --card-background-color: white;
+  --box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  --card-border-radius: 8px;
+  --botton-border-radius: 6px;
+  --primary-text-color: #111111;
+  --secondary-text-color: #222222;
+
+  /* Display */
+  --text-logo-lg: 1.75rem;
+  --text-logo-sm: 1.25rem;
+
+  /* Display */
+  --text-display-xl: 3rem; /* 64px */
+  --text-display-lg: 3.5rem; /* 56px */
+
+  /* Headings */
+  --text-h1: 2.5rem; /* 40px */
+  --text-h2: 2rem; /* 32px */
+  --text-h3: 1.5rem; /* 24px */
+  --text-h4: 1.25rem; /* 20px */
+
+  /* Body */
+  --text-body-lg: 1.125rem; /* 18px */
+  --text-body: 1rem; /* 16px */
+  --text-body-sm: 0.875rem; /* 14px */
+
+  /* UI */
+  --text-caption: 0.75rem; /* 12px */
+}
+
+.sign-up-container {
+  background-color: white;
+  width: 30rem;
+  height: auto;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--card-border-radius);
+  justify-self: center;
+  align-self: center;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+.sign-up-container .headers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.sign-up-container .headers h1 {
+  font-size: var(--text-logo-sm);
+}
+.sign-up-container .headers p {
+  font-size: var(--text-body-sm);
+}
+.sign-up-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sign-up-container form .top-headers {
+  display: flex;
+  gap: 1rem;
+}
+.sign-up-container form .top-headers input {
+  display: flex;
+  gap: 1rem;
+}
+.sign-up-container form input {
+  box-shadow: 0 0 var(--box-shadow);
+  outline: none;
+  padding: 8px;
+  border-top: none;
+  border-bottom: 1px rgba(0, 0, 0, 0.188) solid;
+}
+.sign-up-container form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.sign-up-container form button {
+  background-color: var(--color-primary);
+  font-size: var(--text-body);
+  color: white;
+}
+.sign-up-container form button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+  .sign-up-container {
+    max-width: 90%;
+    height: fit-content;
+    margin-top: 1rem;
+  }
+  .sign-up-container form .top-headers {
+    flex-direction: column;
+  }
+}
