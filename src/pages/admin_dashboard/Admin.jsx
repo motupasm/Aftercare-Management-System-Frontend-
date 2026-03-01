@@ -13,7 +13,7 @@ const Admin = () => {
   const [isUpdateAnnouCardOpen, setIsUpdateAnnouCardOpen] = useState(false);
   const [isLoadingStatus, setIsloadingStatus] = useState(false);
 
-  const BASE_URL = "http://127.0.0.1:8000/api/";
+  const BASE_URL = "https://brightpath-b10e.onrender.com/api/";
 
   const token = localStorage.getItem("access");
   const logout = async () => {

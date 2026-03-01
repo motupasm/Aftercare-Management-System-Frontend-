@@ -11,7 +11,7 @@ const ActivityCard = ({ title, type, days, description, grade }) => {
   return <></>;
 };
 
-const BASE_URL = "http://127.0.0.1:8000/api/";
+const BASE_URL = "https://brightpath-b10e.onrender.com/api/";
 
 const logout = async () => {
   const refresh = localStorage.getItem("refresh");
