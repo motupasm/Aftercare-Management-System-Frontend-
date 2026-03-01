@@ -31,7 +31,7 @@ export const NavProps = ({ home, gallery, pricing, register }) => {
           </Link>
 
           <Link to="/login">
-            <button>Login</button>
+            <button>Dashboard</button>
           </Link>
         </ul>
         <div
@@ -65,7 +65,7 @@ export const NavProps = ({ home, gallery, pricing, register }) => {
           </Link>
           <hr />
           <Link to="/login">
-            <button>Login</button>
+            <button>Dashboard</button>
           </Link>
         </ul>
       </div>

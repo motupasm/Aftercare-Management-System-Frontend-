@@ -96,7 +96,7 @@
 .visionandmission-cards p {
   font-size: var(--text-body);
 }
-@media (min-width: 300px) and (max-width: 720px) {
+@media (min-width: 300px) and (max-width: 992px) {
   .visionandmission-container {
     width: 90%;
     gap: 0.6rem;

@@ -97,7 +97,7 @@
   text-align: center;
   margin-top: 1rem;
 }
-@media (min-width: 300px) and (max-width: 720px) {
+@media (min-width: 300px) and (max-width: 992px) {
   .footer-wrapper {
     height: auto;
   }

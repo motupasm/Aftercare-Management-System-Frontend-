@@ -130,7 +130,7 @@
   font-size: var(--text-body);
   width: 100%;
 }
-@media (min-width: 300px) and (max-width: 720px) {
+@media (min-width: 300px) and (max-width: 992px) {
   .sidebar-toggler-icons {
     display: flex;
   }
@@ -139,5 +139,16 @@
   }
   .navbar-container {
     padding: 2rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1430px) {
+  .sidebar-toggler-icons {
+    display: flex;
+  }
+  .navbar-menu-links {
+    display: none;
+  }
+  .navbar-container {
+    padding: 2rem 5rem;
   }
 }

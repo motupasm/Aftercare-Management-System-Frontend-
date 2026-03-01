@@ -133,7 +133,7 @@
   opacity: 0;
   animation-delay: 800ms;
 }
-@media (min-width: 300px) and (max-width: 720px) {
+@media (min-width: 300px) and (max-width: 992px) {
   .hero-container {
     width: 90%;
     flex-direction: column;

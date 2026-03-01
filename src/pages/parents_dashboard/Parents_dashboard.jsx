@@ -272,8 +272,8 @@ const ParentsDashboard = () => {
             </div>
 
             {/* Recent announcements preview */}
+            <h1 className="quick-action-header">Recent Announments</h1>
             <ul className="annouments-wrapper">
-              <h1 className="quick-action-header">Recent Announments</h1>
               {announcements.map((announcement) => (
                 <li className="card" key={announcement.id}>
                   <div className="left-info">

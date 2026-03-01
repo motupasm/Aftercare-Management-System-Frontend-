@@ -130,7 +130,7 @@
 .card-information .footer-card-infor .day {
   color: var(--color-primary);
 }
-@media (min-width: 300px) and (max-width: 720px) {
+@media (min-width: 300px) and (max-width: 992px) {
   .activities-container {
     width: 90%;
     gap: 0.6rem;
@@ -163,6 +163,7 @@
   }
   .activities-cards-container {
     display: flex;
+
     flex-direction: column;
     width: 100%;
   }

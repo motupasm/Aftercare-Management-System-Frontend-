@@ -726,7 +726,8 @@ const Admin = () => {
             {/* Mobile navbar */}
             <div className="dashboard-navbar">
               <div className="dashboar-dashboard-header">
-                <h1 className="header">Parents Portal</h1>
+                <img src="/person.png" alt="" />
+                <h1 className="header">Admin Portal</h1>
               </div>
               <hr />
               <ul className="dashboar-items">
@@ -830,7 +831,7 @@ const Admin = () => {
                 </label>
                 <div className="btns">
                   <button
-                    type="cancel"
+                    type="button"
                     onClick={() => setIsAnnouCardOpen(!isAnnouCardOpen)}
                   >
                     Cancel
@@ -890,7 +891,7 @@ const Admin = () => {
                 </label>
                 <div className="btns">
                   <button
-                    type="cancel"
+                    type="button"
                     onClick={() => setIsUpdateAnnouCardOpen(false)}
                   >
                     Cancel
@@ -961,6 +962,7 @@ const Admin = () => {
             {/* Mobile navbar */}
             <div className="dashboard-navbar">
               <div className="dashboar-dashboard-header">
+                <img src="/person.png" alt="" />
                 <h1 className="header">Admin Portal</h1>
               </div>
               <hr />
@@ -1087,7 +1089,7 @@ const Admin = () => {
                   </label>
                   <div className="btns">
                     <button
-                      type="cancel"
+                      type="button"
                       onClick={() => setIsActiveCardOpen(!isActiveCardOpen)}
                     >
                       Cancel
@@ -1179,7 +1181,7 @@ const Admin = () => {
                   </label>
                   <div className="btns">
                     <button
-                      type="cancel"
+                      type="button"
                       onClick={() => setIsActiveCardOpen(!isActiveCardOpen)}
                     >
                       Cancel
@@ -1261,6 +1263,7 @@ const Admin = () => {
             {/* Mobile navbar */}
             <div className="dashboard-navbar">
               <div className="dashboar-dashboard-header">
+                <img src="/person.png" alt="" />
                 <h1 className="header">Admin Portal</h1>
               </div>
               <hr />
@@ -1406,6 +1409,7 @@ const Admin = () => {
                   </label>
                   <div className="btns">
                     <button
+                      type="button"
                       onClick={() => setIsActiveCardOpen(!isActiveCardOpen)}
                     >
                       Cancel
@@ -1504,12 +1508,14 @@ const Admin = () => {
                   </label>
                   <div className="btns">
                     <button
-                      type="cancel"
+                      type="button"
                       onClick={() => setIsActiveCardOpen(!isActiveCardOpen)}
                     >
                       Cancel
                     </button>{" "}
-                    <button>Update Activity</button>
+                    <button onClick={() => setTabActive("activities")}>
+                      Update Activity
+                    </button>
                   </div>
                 </form>
               </div>
@@ -1588,6 +1594,7 @@ const Admin = () => {
             {/* Mobile navbar */}
             <div className="dashboard-navbar">
               <div className="dashboar-dashboard-header">
+                <img src="/person.png" alt="" />
                 <h1 className="header">Admin Portal</h1>
               </div>
               <hr />

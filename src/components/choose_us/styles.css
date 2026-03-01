@@ -99,7 +99,7 @@
 .chooseus-cards li p {
   font-size: var(--text-body);
 }
-@media (min-width: 300px) and (max-width: 720px) {
+@media (min-width: 300px) and (max-width: 992px) {
   .choooseus-container {
     width: 90%;
     gap: 0.6rem;
@@ -129,6 +129,46 @@
     gap: 1rem;
     align-items: center;
     margin-top: 2rem;
+  }
+  .chooseus-cards li {
+    min-width: 100%;
+    height: 12rem;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: white;
+    padding: 1rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1430px) {
+  .choooseus-container {
+    width: 76%;
+    gap: 0.6rem;
+  }
+  .chooseus-wrapper {
+    height: auto;
+    margin-top: 5rem;
+  }
+
+  .choooseus-container .header {
+    font-size: var(--text-h3);
+    text-align: center;
+  }
+  .choooseus-container .subheader {
+    font-size: var(--text-body);
+    width: 100%;
+    text-align: center;
+  }
+  .chooseus-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+    flex-direction: column;
   }
   .chooseus-cards li {
     min-width: 100%;
