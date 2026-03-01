@@ -903,10 +903,25 @@ option {
 .NoCards {
 }
 @media (min-width: 300px) and (max-width: 991px) {
+  .admin-actions {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .admin-actions .headers {
+    scrollbar-width: none;
+    width: 100vh;
+  }
+  .admin-actions .header {
+    width: 100vh;
+  }
+  .admin-actions .rows {
+    width: 100vh;
+  }
   .dashboard-navbar {
     width: 100%;
     height: auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   .dashboard-sidebar {
     display: none;
@@ -1027,6 +1042,21 @@ option {
   }
 }
 @media (min-width: 992px) and (max-width: 1430px) {
+  .admin-actions {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .admin-actions .headers {
+    scrollbar-width: none;
+
+    width: 100%;
+  }
+  .admin-actions .header {
+    width: 100vh;
+  }
+  .admin-actions .rows {
+    width: 100%;
+  }
   .dashboard-navbar {
     width: 100%;
     height: auto;

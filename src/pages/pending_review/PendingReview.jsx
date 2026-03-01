@@ -86,21 +86,19 @@ const PendingReview = () => {
 
         <ul className="details">
           <li>
-            <img src="/clock.png" alt="" />
-            Review Time : 24–48 hours
+            <img src="/clock.png" alt="" /> -: Review Time : 24–48 hours
           </li>
           <li>
             {" "}
             <img src="/bell.png" alt="" />
-            Notification : Email confirmation
+            -: Notification : Email confirmation
           </li>
           <li>
             {" "}
             <img src="/phone.png" alt="" />
-            Need help? Contact support
+            -: Need help? Contact support
           </li>
         </ul>
-        <hr />
       </div>
     </>
   );
