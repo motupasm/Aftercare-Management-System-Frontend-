@@ -16,6 +16,8 @@ const SignUp = () => {
     registration_form: null,
   });
 
+  const BASE_URL = "https://brightpath-b10e.onrender.com/api/";
+
   const navigate = useNavigate();
 
   const handleOnChangeSignUpForm = (e) => {
@@ -57,7 +59,7 @@ const SignUp = () => {
 
     setIsLoading(true);
 
-    const res = await fetch("http://127.0.0.1:8000/api/register/", {
+    const res = await fetch(`${BASE_URL}register/`, {
       method: "POST",
       body: formData,
     });

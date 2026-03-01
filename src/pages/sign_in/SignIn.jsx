@@ -14,6 +14,8 @@ const SignIn = () => {
       setErrors({ ...errors, [e.target.name]: "" }));
   };
 
+  const BASE_URL = "https://brightpath-b10e.onrender.com/api/";
+
   const validate = () => {
     newError = {};
 
@@ -27,7 +29,7 @@ const SignIn = () => {
   const handleOnSubmitLogin = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    const res = await fetch("http://127.0.0.1:8000/api/login/", {
+    const res = await fetch(`${BASE_URL}login/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
