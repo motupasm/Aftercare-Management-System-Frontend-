@@ -18,7 +18,9 @@ const Cta = () => {
               Register Now <img src="/right-arrow-icon.png" alt="" />
             </button>
           </Link>
-          <button>Sign up</button>
+          <Link to={"/sign-up"}>
+            <button className="button2">Sign up</button>
+          </Link>
         </div>
       </div>
     </>

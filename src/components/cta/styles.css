@@ -84,7 +84,7 @@
 .cta-btns button:hover {
   background-color: var(--color-primary-hover);
 }
-.cta-btns button:nth-child(2) {
+.cta-btns .button2 {
   padding: 10px 1rem;
   border: 1px var(--color-primary) solid;
   display: flex;
@@ -93,6 +93,9 @@
   border-radius: var(--botton-border-radius);
   align-items: center;
   gap: 0.5rem;
+}
+.button2 {
+  background-color: transparent;
 }
 
 .cta-btns button img {
