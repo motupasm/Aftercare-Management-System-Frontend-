@@ -7,7 +7,7 @@ const Hero = () => {
     <>
       <div className="hero-container" id="home">
         <div className="left-hero-content">
-          <p className="tag">DAY CARE PROGRAM</p>
+          <p className="tag">AFTERCARE PROGRAM</p>
           <div className="hero-header">
             Where Leaning Continues <br /> After the Bell
           </div>

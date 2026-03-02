@@ -16,7 +16,7 @@ const Pricing = () => {
 
         <div className="pricing-cards">
           <div className="card">
-            <h1 className="card-header">3-Day plan</h1>
+            <h1 className="card-header">3-Days plan</h1>
             <div className="price-container">
               <h1 className="price">R250</h1>
               <p className="period">/month</p>
@@ -47,7 +47,7 @@ const Pricing = () => {
             </Link>
           </div>
           <div className="card">
-            <h1 className="card-header">3-Day plan</h1>
+            <h1 className="card-header">5-Days plan</h1>
             <div className="price-container">
               <h1 className="price">R400</h1>
               <p className="period">/month</p>
@@ -55,7 +55,7 @@ const Pricing = () => {
             <p>Our most popular full-week coverage</p>
             <ul>
               <li>
-                <img src="/tick.png" alt="" />5 days per week (Mon/Wed/Fri)
+                <img src="/tick.png" alt="" />5 days per week (Mon-Fri)
               </li>
               <li>
                 <img src="/tick.png" alt="" />

@@ -66,7 +66,7 @@ const Registration = () => {
           <p>
             PDF format, approx. 2 pages. Please Print and complete all fields
           </p>
-          <a href="#" download>
+          <a href="/Aftercare_Registration_Form_Demo.pdf" download>
             <button>
               <img src="/download.png" alt="" />
               Download Registration Form

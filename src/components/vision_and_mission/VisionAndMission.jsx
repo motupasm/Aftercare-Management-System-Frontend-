@@ -16,6 +16,7 @@ const VisionAndMission = () => {
           <div className="card">
             <img src="/target.png" alt="" />
             <h1>Our Mission</h1>
+            <hr />
             <p>
               To provide a safe, nurturing and simulating after-school
               environment where every child has opotunity to learn, grow , and
@@ -32,6 +33,7 @@ const VisionAndMission = () => {
           <div className="card">
             <img src="/eye.png" alt="" />
             <h1>Our Mission</h1>
+            <hr />
             <p>
               To be the most trusted impactful after-school care provider in our
               community, recognized for cultivatng confident, curious and
